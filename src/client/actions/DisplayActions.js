@@ -1,10 +1,11 @@
 import {
   CHANGE_STATISTICS_BY,
   CHANGE_MAP_BY,
+  CHANGE_COLOR_BY,
+  CHANGE_OPACITY_BY_RECORDS,
   SET_CLUSTER_COLORS,
   SET_PANEL_INDEX,
-} from '../constants/ActionTypes';
-
+} from "../constants/ActionTypes";
 
 export function selectPanel(panelIndex) {
   return {
@@ -24,6 +25,20 @@ export function changeMapBy(mapBy) {
   return {
     type: CHANGE_MAP_BY,
     mapBy,
+  };
+}
+
+export function changeColorBy(colorBy) {
+  return {
+    type: CHANGE_COLOR_BY,
+    colorBy,
+  };
+}
+
+export function changeOpacityByRecords(opacityByRecords) {
+  return {
+    type: CHANGE_OPACITY_BY_RECORDS,
+    opacityByRecords,
   };
 }
 

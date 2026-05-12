@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import cn from 'classnames';
@@ -33,7 +34,7 @@ class App extends Component {
     this.checkDataWorkerInitiated(this.props.data);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     this.checkDataWorkerInitiated(nextProps.data);
   }
 

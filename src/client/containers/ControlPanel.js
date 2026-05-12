@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -59,6 +60,7 @@ class ControlPanel extends Component {
     // ) : 'Info';
     const panels = [
       {
+        key: 'Data-title',
         title: {
           content: 'Data',
           key: 'Data-title',
@@ -76,6 +78,7 @@ class ControlPanel extends Component {
         },
       },
       {
+        key: 'Info-title',
         title: {
           content: <InfoTitle active={display.panelIndex === 1} highlightStore={highlightStore} />,
           key: 'Info-title',
@@ -97,6 +100,7 @@ class ControlPanel extends Component {
         },
       },
       {
+        key: 'Map-title',
         title: {
           content: 'Map',
           key: 'Map-title',

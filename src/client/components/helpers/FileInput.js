@@ -1,4 +1,6 @@
-import React, {PropTypes} from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
+import $ from "jquery";
 
 /**
 * A button that triggers a hidden input element of type file.
@@ -20,6 +22,7 @@ export default class FileInput extends React.Component {
 
   handleClickLoadFile = (e) => {
     $(this.inputFile).click();
+    console.log("TODO: Handle file click.")
   }
 
   handleInputChange = (e) => {

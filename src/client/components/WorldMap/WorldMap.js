@@ -1,12 +1,13 @@
-import React, {Component, PropTypes} from 'react';
+import React, { Component } from 'react';
 import worldMapChart from './worldMapChart.js';
 import * as DataFetching from '../../constants/DataFetching';
 import {BY_CELL, BY_CLUSTER} from '../../constants/Display';
 import * as Binning from '../../constants/Binning';
-import d3 from 'd3';
+import * as d3 from 'd3';
 import d3tip from 'd3-tip';
 import d3tipStyles from './d3-tip.css';
-import R from 'ramda';
+import PropTypes from 'prop-types';
+import * as R from 'ramda';
 
 class WorldMap extends Component {
 
