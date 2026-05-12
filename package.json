@@ -1,7 +1,7 @@
 {
   "name": "infomap-bioregions",
   "version": "1.3.2",
-  "homepage": "/bioregions",
+  "homepage": "/bioregions1",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
